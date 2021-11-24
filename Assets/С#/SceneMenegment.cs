@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class SceneMenegment : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void GoToScene(string SceneName)
     {
-        
+        SceneManager.LoadScene(SceneName);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Exit()
     {
-        
+        Application.Quit();
     }
 }
