@@ -24,7 +24,7 @@ MonoBehaviour:
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     version: 10.3.2
-    eulaAcceptedVersions: '{"Values":["10.3"]}'
+    eulaAcceptedVersions: '{"Values":["10.3","0.0","10.2"]}'
   database:
     disableModelExtraction: 0
   shaders:
@@ -41,7 +41,7 @@ MonoBehaviour:
     autoImportArcore: 0
   playmode:
     mSequencePath: 
-    playModeType: 0
+    playModeType: 1
   webcam:
     renderTextureLayer: 30
   packageInformation:
