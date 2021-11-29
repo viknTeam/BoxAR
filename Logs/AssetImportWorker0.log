@@ -15,12 +15,12 @@ C:/Users/User/Documents/GitHub/BoxAR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56381
+62809
 Successfully changed project path to: C:/Users/User/Documents/GitHub/BoxAR
 C:/Users/User/Documents/GitHub/BoxAR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 58.69 ms, found 12 plugins.
-Preloading 3 native plugins for Editor in 2.88 ms.
+Refreshing native plugins compatible for Editor in 58.81 ms, found 12 plugins.
+Preloading 3 native plugins for Editor in 3.36 ms.
 Initialize engine version: 2020.3.23f1 (c5d91304a876)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/User/Documents/GitHub/BoxAR/Assets
@@ -35,49 +35,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56512
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001127 seconds.
+Registered in 0.001510 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 44.33 ms, found 12 plugins.
-Preloading 3 native plugins for Editor in 0.12 ms.
+Refreshing native plugins compatible for Editor in 45.71 ms, found 12 plugins.
+Preloading 3 native plugins for Editor in 0.14 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.486 seconds
+- Completed reload, in  0.522 seconds
 Domain Reload Profiling:
-	ReloadAssembly (487ms)
-		BeginReloadAssembly (40ms)
+	ReloadAssembly (522ms)
+		BeginReloadAssembly (47ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (387ms)
-			LoadAssemblies (39ms)
+		EndReloadAssembly (410ms)
+			LoadAssemblies (44ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (126ms)
+			SetupTypeCache (137ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (153ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (159ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (45ms)
+				RefreshPlugins (46ms)
 				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (69ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009204 seconds.
+Registered in 0.010174 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.89 ms, found 12 plugins.
-Preloading 3 native plugins for Editor in 0.13 ms.
+Refreshing native plugins compatible for Editor in 54.82 ms, found 12 plugins.
+Preloading 3 native plugins for Editor in 0.16 ms.
 System.NullReferenceException: Object reference not set to an instance of an object
   at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <0213e6f0fa134fa89db6bafa02899715>:0 
   at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
@@ -132,45 +132,45 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.021 seconds
+- Completed reload, in  1.091 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1021ms)
-		BeginReloadAssembly (117ms)
+	ReloadAssembly (1091ms)
+		BeginReloadAssembly (123ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (852ms)
-			LoadAssemblies (75ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (907ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (277ms)
-			ReleaseScriptCaches (0ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (337ms)
+			SetupLoadedEditorAssemblies (373ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (48ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (187ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				RefreshPlugins (55ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.76 ms, found 12 plugins.
-Preloading 3 native plugins for Editor in 0.12 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 12 plugins.
+Preloading 3 native plugins for Editor in 0.14 ms.
 Unloading 2305 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 96.3 MB.
 System memory in use after: 96.5 MB.
 
 Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 3042.
-Total: 3.205800 ms (FindLiveObjects: 0.271600 ms CreateObjectMapping: 0.119200 ms MarkObjects: 2.740000 ms  DeleteObjects: 0.073800 ms)
+Total: 2.990400 ms (FindLiveObjects: 0.262900 ms CreateObjectMapping: 0.106800 ms MarkObjects: 2.551000 ms  DeleteObjects: 0.068800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -185,463 +185,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/BoxAR.unity
-  artifactKey: Guid(6bdce89659816455b9f906fc62d19910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/BoxAR.unity using Guid(6bdce89659816455b9f906fc62d19910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48cc82171b0ebcee666b6c7d6deda16') in 0.015399 seconds 
-  Import took 0.019244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 334.025803 seconds.
   path: Assets/Resources/Models/BoxerMash.fbx
-  artifactKey: Guid(7a6e07f98292a7847a8ba784a5925c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Models/BoxerMash.fbx using Guid(7a6e07f98292a7847a8ba784a5925c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229d710dfe1b9e6336fe610567309c2e') in 0.240837 seconds 
-  Import took 0.246623 seconds .
+  artifactKey: Guid(7aad8df141ff6784c930b377596ed4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Models/BoxerMash.fbx using Guid(7aad8df141ff6784c930b377596ed4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a15b4184b18acf7d579cdd07413e75') in 0.191245 seconds 
+  Import took 0.196561 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 323.402620 seconds.
-  path: Assets/Resources/Anim/Mob.controller
-  artifactKey: Guid(63be6c3534ebca44aab23bdfee839a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/Mob.controller using Guid(63be6c3534ebca44aab23bdfee839a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8550c04bdd0b02f6c4d1db54f43657f9') in 0.012467 seconds 
-  Import took 0.016139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.797229 seconds.
-  path: Assets/Resources/Anim/MoveMobAnim.anim
-  artifactKey: Guid(38e584ecf06eca541ac84f68801967e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/MoveMobAnim.anim using Guid(38e584ecf06eca541ac84f68801967e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a55813eddfee5dd92dd6ce3844570ffd') in 0.006372 seconds 
-  Import took 0.010252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.655909 seconds.
-  path: Assets/Resources/Anim
-  artifactKey: Guid(c1a8ebe923370734b88c6416a84a6bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim using Guid(c1a8ebe923370734b88c6416a84a6bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '257042cfc1ec52d390ae131eb9126b2c') in 0.005947 seconds 
-  Import took 0.009875 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.229348 seconds.
-  path: Assets/Resources/Anim/Enemy.overrideController
-  artifactKey: Guid(8d7af7841a1db834a84ce1bdb8993a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/Enemy.overrideController using Guid(8d7af7841a1db834a84ce1bdb8993a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a173e4a70659be40983f06561005464d') in 0.008545 seconds 
-  Import took 0.013664 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 644.810148 seconds.
-  path: Assets/Resources/Anim/New Animator Override Controller.overrideController
-  artifactKey: Guid(c2cb9787a25b26c42834dcac83a1042a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/New Animator Override Controller.overrideController using Guid(c2cb9787a25b26c42834dcac83a1042a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a257f38477b94d572710edcdf5c116') in 0.007297 seconds 
-  Import took 0.012601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 290.164304 seconds.
-  path: Assets/Resources/Anim/New Animator Controller.controller
-  artifactKey: Guid(025f895630b888d4186c527eb3a8a1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/New Animator Controller.controller using Guid(025f895630b888d4186c527eb3a8a1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33aa11582cfa6f4d2b35ff9a8927c76b') in 0.007265 seconds 
-  Import took 0.012407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.514501 seconds.
-  path: Assets/Resources/Anim/New Animation.anim
-  artifactKey: Guid(681dc82d9ff1c424d96a93e95c75e029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/New Animation.anim using Guid(681dc82d9ff1c424d96a93e95c75e029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92789a812aa637da01ce00e69a08194b') in 0.006894 seconds 
-  Import took 0.011122 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7236.963606 seconds.
-  path: Assets/Resources/Anim/New Animator Controller 1.controller
-  artifactKey: Guid(a08b2972a81be524cb3412544e1dc8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/New Animator Controller 1.controller using Guid(a08b2972a81be524cb3412544e1dc8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e3bc03bd650131c22e896cfe3a0ba9') in 0.011107 seconds 
-  Import took 0.018443 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.885925 seconds.
-  path: Assets/Resources/Anim/RunBox1.anim
-  artifactKey: Guid(6aabb211cff273a41813292c664501d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/RunBox1.anim using Guid(6aabb211cff273a41813292c664501d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927cfcfb7fcc99daabe8c9a824bbd14b') in 0.007870 seconds 
-  Import took 0.012097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.707865 seconds.
-  path: Assets/Resources/Anim/SteetBox1.anim
-  artifactKey: Guid(9ec88c76fbd72aa41a4cf8ef3b6ee669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/SteetBox1.anim using Guid(9ec88c76fbd72aa41a4cf8ef3b6ee669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5661953b8e15f7734182d72f97dc5c2a') in 0.006757 seconds 
-  Import took 0.010632 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2070.910598 seconds.
-  path: Assets/Resources/Anim/BoxerMash.controller
-  artifactKey: Guid(efc73be12c4d34845ac5a4685f4e29f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Anim/BoxerMash.controller using Guid(efc73be12c4d34845ac5a4685f4e29f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f0eaa5126e93058766505d6f0b61ac6') in 0.006336 seconds 
-  Import took 0.010669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 95.846522 seconds.
-  path: Assets/С#/Movemen.cs
-  artifactKey: Guid(262b333833a977d4ea64614020486688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/С#/Movemen.cs using Guid(262b333833a977d4ea64614020486688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd5def20d5c7542d8614acdfaefae160') in 0.014966 seconds 
-  Import took 0.019147 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009099 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 12 plugins.
-Preloading 3 native plugins for Editor in 0.16 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at VuforiaEnabledObserver..cctor () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <0213e6f0fa134fa89db6bafa02899715>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Instance of UnityEngine.XR.MagicLeap.MagicLeapLoader couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.ScriptableObject:CreateInstance (string)
-UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs:95)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:152)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs line 95]
-
-We were unable to create an instance of the requested type UnityEngine.XR.MagicLeap.MagicLeapLoader. Please make sure that all packages are updated to support this version of XR Plug-In Management. See the Unity documentation for XR Plug-In Management for information on resolving this issue.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs:108)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:152)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs Line: 108)
-
-Error creating instance of loader Magic Leap for package Magic Leap Plugin
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:157)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs Line: 157)
-
-Instance of UnityEngine.XR.MagicLeap.MagicLeapLoader couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.ScriptableObject:CreateInstance (string)
-UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs:95)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:152)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs line 95]
-
-We were unable to create an instance of the requested type UnityEngine.XR.MagicLeap.MagicLeapLoader. Please make sure that all packages are updated to support this version of XR Plug-In Management. See the Unity documentation for XR Plug-In Management for information on resolving this issue.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs:108)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:152)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs Line: 108)
-
-Error creating instance of loader Magic Leap Zero Iteration for package Magic Leap Plugin
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:157)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs Line: 157)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.054 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1056ms)
-		BeginReloadAssembly (172ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (78ms)
-		EndReloadAssembly (828ms)
-			LoadAssemblies (90ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (295ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (302ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (207ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.02 ms, found 12 plugins.
-Preloading 3 native plugins for Editor in 0.14 ms.
-Unloading 2261 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.4 MB.
-System memory in use after: 97.6 MB.
-
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3089.
-Total: 4.183400 ms (FindLiveObjects: 0.312100 ms CreateObjectMapping: 0.152100 ms MarkObjects: 3.634800 ms  DeleteObjects: 0.083300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008614 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 12 plugins.
-Preloading 3 native plugins for Editor in 0.13 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at VuforiaEnabledObserver..cctor () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
-  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <0213e6f0fa134fa89db6bafa02899715>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Instance of UnityEngine.XR.MagicLeap.MagicLeapLoader couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.ScriptableObject:CreateInstance (string)
-UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs:95)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:152)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs line 95]
-
-We were unable to create an instance of the requested type UnityEngine.XR.MagicLeap.MagicLeapLoader. Please make sure that all packages are updated to support this version of XR Plug-In Management. See the Unity documentation for XR Plug-In Management for information on resolving this issue.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs:108)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:152)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs Line: 108)
-
-Error creating instance of loader Magic Leap for package Magic Leap Plugin
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:157)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs Line: 157)
-
-Instance of UnityEngine.XR.MagicLeap.MagicLeapLoader couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.ScriptableObject:CreateInstance (string)
-UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs:95)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:152)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs line 95]
-
-We were unable to create an instance of the requested type UnityEngine.XR.MagicLeap.MagicLeapLoader. Please make sure that all packages are updated to support this version of XR Plug-In Management. See the Unity documentation for XR Plug-In Management for information on resolving this issue.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs:108)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:152)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/EditorUtilities.cs Line: 108)
-
-Error creating instance of loader Magic Leap Zero Iteration for package Magic Leap Plugin
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:157)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:129)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:118)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:87)
-UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs:50)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: C:/Users/User/Box/Library/PackageCache/com.unity.xr.management@4.1.0/Editor/XRPackageInitialization.cs Line: 157)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.979 seconds
-Domain Reload Profiling:
-	ReloadAssembly (980ms)
-		BeginReloadAssembly (107ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (820ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (284ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (312ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (217ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.93 ms, found 12 plugins.
-Preloading 3 native plugins for Editor in 0.13 ms.
-Unloading 2261 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.4 MB.
-System memory in use after: 97.6 MB.
-
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3092.
-Total: 2.996600 ms (FindLiveObjects: 0.264000 ms CreateObjectMapping: 0.105500 ms MarkObjects: 2.589600 ms  DeleteObjects: 0.036600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
