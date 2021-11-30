@@ -4,19 +4,33 @@ using UnityEngine;
 
 public class Movemen : MonoBehaviour
 {
-    [SerializeField] private float Speed;
-    private float HrSpeed;
-    Rigidbody rb;
+    //Основные параметры
+    public float speedBoxOne; //Скорость персонажа
+
+    //Параметры гемплея персонажа
+    private float grvitiForse; //Гравитация персонажа
+    private Vector3 boxVector; //Напаравление персонажа
+
+    //Ссылки на компоненты
+    private CharacterController ch_BoxController;
+    private Animation ch_BoxAnimation;
 
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        ch_BoxController = GetComponent<CharacterController>();
+        ch_BoxAnimation = GetComponent<Animation>();
+
     }
 
-    private void FixedUpdate()
+    //Метод перемещения персонажа
+    private void BoxMove()
     {
-        transform.Translate(HrSpeed, 0, 0);
+     boxVector = Vector3.zero;
+     boxVector.x = Input.GetAxis("Horizontal") * speedBoxOne;
+     boxVector.z = Input.GetAxis("Vertical") * speedBoxOne;
+
     }
 
+    
 }
