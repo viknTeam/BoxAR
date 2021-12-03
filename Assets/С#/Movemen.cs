@@ -14,12 +14,15 @@ public class Movemen : MonoBehaviour
     //—сылки на компоненты
     private CharacterController ch_BoxController;
     private Animator ch_BoxAnimation;
+    private Controller bx_controllrt;
 
 
     private void Start()
     {
         ch_BoxController = GetComponent<CharacterController>();
         ch_BoxAnimation = GetComponent<Animator>();
+        bx_controllrt = GameObject.FindGameObjectWithTag("Joystick").GetComponent<Controller>();
+
 
     }
     private void Update()
@@ -31,8 +34,8 @@ public class Movemen : MonoBehaviour
     private void BoxMove()
     {
         boxVector = Vector3.zero;
-        boxVector.x = -Input.GetAxis("Horizontal") * speedBoxOne;
-        boxVector.z = -Input.GetAxis("Vertical") * speedBoxOne;
+        boxVector.x = -bx_controllrt.Horizontal() * speedBoxOne;
+        boxVector.z = -bx_controllrt.Vertical() * speedBoxOne;
 
         if (boxVector.x != 0 || boxVector.z != 0)
             ch_BoxAnimation.SetBool("Move", true);

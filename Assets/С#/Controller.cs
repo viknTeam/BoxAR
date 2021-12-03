@@ -29,12 +29,26 @@ public class Controller : MonoBehaviour,IDragHandler, IPointerDownHandler, IPoin
         Vector2 pos;
         if(RectTransformUtility.ScreenPointToLocalPointInRectangle(joystick.rectTransform, ped.position, ped.pressEventCamera, out pos))
         {
-            pos.x = pos.x / joystick.rectTransform.sizeDelta.x;
-            pos.y = pos.y / joystick.rectTransform.sizeDelta.x;
+            pos.x = (pos.x / joystick.rectTransform.sizeDelta.x);
+            pos.y = (pos.y / joystick.rectTransform.sizeDelta.y);
             
-            intputVector2 = new Vector2(pos.x * 2 - 1, pos.y * 2 - 1);
+            intputVector2 = new Vector2(pos.x , pos.y );
+            intputVector2 = (intputVector2.magnitude > 1.0f) ? intputVector2.normalized : intputVector2;
+
+            stick.rectTransform.anchoredPosition = new Vector2(intputVector2.x * (joystick.rectTransform.sizeDelta.x / 2), intputVector2.y * (joystick.rectTransform.sizeDelta.y / 2));
+
 
         }
+    }
+    public float Horizontal()
+    {
+        if (intputVector2.x != 0) return intputVector2.x;
+            else return -Input.GetAxis("Horizontal");
+    }
+    public float Vertical()
+    {
+        if (intputVector2.y != 0) return intputVector2.y;
+        else return -Input.GetAxis("Vertical");
     }
 }
   
