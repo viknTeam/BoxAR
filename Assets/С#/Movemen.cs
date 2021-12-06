@@ -21,9 +21,7 @@ public class Movemen : MonoBehaviour
     {
         ch_BoxController = GetComponent<CharacterController>();
         ch_BoxAnimation = GetComponent<Animator>();
-        bx_controllrt = GameObject.FindGameObjectWithTag("Joystick").GetComponent<Controller>();
-
-
+        bx_controllrt = GameObject.FindGameObjectWithTag("Joystick").GetComponent<Controller>();// Движение с помощью джастика
     }
     private void Update()
     {
@@ -33,6 +31,7 @@ public class Movemen : MonoBehaviour
     //Метод перемещения персонажа
     private void BoxMove()
     {
+        // Направление движения игрока
         boxVector = Vector3.zero;
         boxVector.x = -bx_controllrt.Horizontal() * speedBoxOne;
         boxVector.z = -bx_controllrt.Vertical() * speedBoxOne;
