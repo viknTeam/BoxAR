@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movemen : MonoBehaviour
 {
@@ -15,7 +16,6 @@ public class Movemen : MonoBehaviour
     private CharacterController ch_BoxController;
     private Animator ch_BoxAnimation;
     private Controller bx_controllrt;
-
 
     private void Start()
     {
@@ -39,7 +39,7 @@ public class Movemen : MonoBehaviour
         if (boxVector.x != 0 || boxVector.z != 0)
             ch_BoxAnimation.SetBool("Move", true);
         else ch_BoxAnimation.SetBool("Move", false);
-        
+
         if (Vector3.Angle(Vector3.forward, boxVector) > 1f)
         {
             Vector3 direct = Vector3.RotateTowards(transform.forward, boxVector, speedBoxOne, 0.0f);
