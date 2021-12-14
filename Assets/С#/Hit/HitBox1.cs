@@ -5,9 +5,34 @@ using UnityEngine;
 public class HitBox1 : MonoBehaviour
 {
     public Animator anim;
+    public Transform attacPoint;
 
-    void Attac()
+    public float attacRange = 0.5f;
+    public LayerMask enimeMask;
+
+
+    public void Attac()
     {
-        anim.SetBool("Hit", true);
+        anim.SetTrigger("Hit");
+        Collider[] hitEnim = Physics.OverlapSphere(attacPoint.position, attacRange, enimeMask);
+        foreach (Collider enemy in hitEnim)
+        {
+            Debug.Log("ebs, ebs, ebs" + enemy.name);
+        }
+
+    }
+    void OnDrawGizmosSelected()
+    {
+        if (attacPoint == null)
+            return;
+        Gizmos.DrawWireSphere(attacPoint.position, attacRange);
+    }
+    public void AttacBk()
+    {
+        anim.SetTrigger("Hit2");
+    }
+    public void AttacHk()
+    {
+        anim.SetTrigger("Hit3");
     }
 }
