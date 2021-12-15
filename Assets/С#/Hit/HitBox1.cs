@@ -9,7 +9,7 @@ public class HitBox1 : MonoBehaviour
 
     public float attacRange = 0.5f;
     public LayerMask enimeMask;
-
+    public int attacDemage = 40;
 
     public void Attac()
     {
@@ -17,7 +17,7 @@ public class HitBox1 : MonoBehaviour
         Collider[] hitEnim = Physics.OverlapSphere(attacPoint.position, attacRange, enimeMask);
         foreach (Collider enemy in hitEnim)
         {
-            Debug.Log("ebs, ebs, ebs" + enemy.name);
+            enemy.GetComponent<Enemy>().TakeDemage(attacDemage);
         }
 
     }
