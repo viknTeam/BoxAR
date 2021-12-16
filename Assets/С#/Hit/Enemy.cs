@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public Animator animator;
     public int maxHeal = 100;
     int currentHeal;
     
@@ -17,6 +18,7 @@ public class Enemy : MonoBehaviour
     {
         currentHeal -= demage;
 
+        animator.SetTrigger("Hurt");
         if(currentHeal <= 0)
         {
             The();
@@ -24,6 +26,14 @@ public class Enemy : MonoBehaviour
     }
     void The()
     {
-        Debug.Log("xana");
+        
+        
+       
+            animator.SetBool("Rest", true);
+        
+        GetComponent<Collider>().enabled = false;
+        GetComponent<MovemenTwo>().enabled = false;
+       
+        this.enabled = false;
     }
 }
