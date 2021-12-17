@@ -5,6 +5,10 @@ using UnityEngine;
 public class HitBox2 : MonoBehaviour
 {
     public Animator animTwo;
+    public Transform attacPoint_g, attacPointTwo_g, attacPointTr_g;
+
+    public float attacRange_g, attacRangeTwo_g, attacRangeTr_g;
+
 
     public void AttacTwo()
     {
