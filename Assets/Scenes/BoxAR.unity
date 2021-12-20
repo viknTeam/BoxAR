@@ -1383,35 +1383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c7b2fa77fcf7045bdc5c4118f71027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &248758331
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'BoxMaterial
-
-    18390'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5b255ba962c644939034e479ee10e5c8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &281444201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1532,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 365096992}
   maxHeal: 100
+--- !u!114 &365096996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365096991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f8dfa4264b85e4ea0ac9779408aecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animTwo: {fileID: 365096992}
+  attacPoint_g: {fileID: 1062849506}
+  attacPointTwo_g: {fileID: 1227231222}
+  attacPointTr_g: {fileID: 1169929383}
+  attacRange_g: 0.22
+  attacRangeTwo_g: 0
+  attacRangeTr_g: 0.5
+  layerMaskTwo:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &401378581
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,6 +2515,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animTwo: {fileID: 365096992}
+  attacPoint_g: {fileID: 1062849506}
+  attacPointTwo_g: {fileID: 0}
+  attacPointTr_g: {fileID: 0}
+  attacRange_g: 0.91
+  attacRangeTwo_g: 0
+  attacRangeTr_g: 0
+  layerMaskTwo:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &920480028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2669,6 +2671,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animTwo: {fileID: 365096992}
+  attacPoint_g: {fileID: 0}
+  attacPointTwo_g: {fileID: 0}
+  attacPointTr_g: {fileID: 1169929383}
+  attacRange_g: 0
+  attacRangeTwo_g: 0
+  attacRangeTr_g: 0.56
+  layerMaskTwo:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1007827672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2972,6 +2983,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animTwo: {fileID: 365096992}
+  attacPoint_g: {fileID: 0}
+  attacPointTwo_g: {fileID: 1227231222}
+  attacPointTr_g: {fileID: 0}
+  attacRange_g: 0
+  attacRangeTwo_g: 0.58
+  attacRangeTr_g: 0
+  layerMaskTwo:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1058977014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3066,6 +3086,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058977011}
   m_CullTransparentMesh: 1
+--- !u!1 &1062849505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062849506}
+  m_Layer: 0
+  m_Name: attacPoint_g
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1062849506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062849505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.04, y: 6.331, z: 14.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 615718820}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1169929382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1169929383}
+  m_Layer: 0
+  m_Name: attacPointTr_g
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1169929383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169929382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 615718820}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1227231221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1227231222}
+  m_Layer: 0
+  m_Name: attacPointTwo_g
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1227231222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227231221}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 615718820}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1374923063
 GameObject:
   m_ObjectHideFlags: 0
@@ -4871,7 +4981,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 248758331}
+  - {fileID: 1891562080}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5229,14 +5339,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1530116563}
   attacPoint: {fileID: 1388945926}
-  attacPointTwo: {fileID: 0}
-  attacPointTr: {fileID: 0}
+  attacPointTwo: {fileID: 179252424}
+  attacPointTr: {fileID: 1614118389}
   attacRange: 0.39
   attacRangeTwo: 0
   attacRangeTr: 0.5
   enimeMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!21 &1891562080
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'BoxMaterial
+
+    18416'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 5b255ba962c644939034e479ee10e5c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1994523769
 GameObject:
   m_ObjectHideFlags: 0

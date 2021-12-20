@@ -5,20 +5,20 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public Animator animator;
-    public int maxHeal = 100;
+    public int maxHeal = 100;// Переменая здоровья 
     int currentHeal;
     
 
     void Start()
     {
-        currentHeal = maxHeal;    
+        currentHeal = maxHeal;// Возвращения кол-во очков здоровья при начале игры
     }
 
     public void TakeDemage(int demage)
     {
-        currentHeal -= demage;
+        currentHeal -= demage; 
 
-        animator.SetTrigger("Hurt");
+        animator.SetTrigger("Hurt"); // Анимация получения атаки
         if(currentHeal <= 0)
         {
             The();
@@ -26,14 +26,12 @@ public class Enemy : MonoBehaviour
     }
     void The()
     {
+
+            animator.SetBool("Rest", true);// Анимация проигрыша
         
-        
-       
-            animator.SetBool("Rest", true);
-        
-        GetComponent<Collider>().enabled = false;
-        GetComponent<MovemenTwo>().enabled = false;
-       
-        this.enabled = false;
+        GetComponent<Collider>().enabled = false;// Отключения колайдера при поражении
+        GetComponent<MovemenTwo>().enabled = false;// Отключения скрипта при поражения
+
+        this.enabled = false;// Отключения текущего скрипта при поражении 
     }
 }
