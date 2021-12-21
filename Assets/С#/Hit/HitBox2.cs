@@ -13,28 +13,29 @@ public class HitBox2 : MonoBehaviour
     public void AttacTwo()
     {
         animTwo.SetTrigger("HitTwo");// ¬ключени€ анимации атаки
-        Collider[] hitPoint_g = Physics.OverlapSphere(attacPoint_g.position, attacRange_g, layerMaskTwo);// —равнени€ позиции точки и противника
-        foreach (Collider enimTwo in hitPoint_g)// ≈сли позици€ точки и противника совпадают, отнимаетс€ здоровье противника
+        Collider[] HitEnemTwo = Physics.OverlapSphere(attacPoint_g.position, attacRange_g, layerMaskTwo);// —равнени€ позиции точки и противника
+        foreach (Collider enimTwo in HitEnemTwo)// ≈сли позици€ точки и противника совпадают, отнимаетс€ здоровье противника
         {
-            enimTwo.GetComponent<Enemy>().TakeDemage(20);//  ол-во отнимаемых очков
+            enimTwo.GetComponent<EnenmyTwo>().TackDemage(40); //  ол-во отнимаемых очков
         }
+        
     }
     public void AttacTwoBc()
     {
         animTwo.SetTrigger("HitTwo2");// ¬ключение второй анимации атаки
-        Collider[] hitPointTwo_g = Physics.OverlapSphere(attacPointTwo_g.position, attacRangeTwo_g, layerMaskTwo);// —равнени€ позиции точки и противника
-        foreach (Collider enimTwo in hitPointTwo_g)// ≈сли позици€ точки и противника совпадают, отнимаетс€ здоровье противника
+        Collider[] HitEnemTwo_g = Physics.OverlapSphere(attacPointTwo_g.position, attacRangeTwo_g, layerMaskTwo);// —равнени€ позиции точки и противника
+        foreach (Collider enimTwo in HitEnemTwo_g)// ≈сли позици€ точки и противника совпадают, отнимаетс€ здоровье противника
         {
-            enimTwo.GetComponent<Enemy>().TakeDemage(40);//  ол-во отимаемых очков
+            enimTwo.GetComponent<EnenmyTwo>().TackDemage(60);//  ол-во отимаемых очков
         }
     }
     public void AttacTwoHc()
     {
         animTwo.SetTrigger("HitTwo3");// ¬ключени€ третий анимации атаки
-        Collider[] hitPointTr_g = Physics.OverlapSphere(attacPointTr_g.position, attacRangeTr_g, layerMaskTwo);// —равнени€ позиции точки и противника
-        foreach (Collider enimTwo in hitPointTr_g)// ≈сли позици€ точки и противника совпадают, отнимаетс€ здоровье противника
+        Collider[] HitEnemTr_g = Physics.OverlapSphere(attacPointTr_g.position, attacRangeTr_g, layerMaskTwo);// —равнени€ позиции точки и противника
+        foreach (Collider enimTwo in HitEnemTr_g)// ≈сли позици€ точки и противника совпадают, отнимаетс€ здоровье противника
         {
-            enimTwo.GetComponent<Enemy>().TakeDemage(100);//  ол-во отнимаемых очков
+            enimTwo.GetComponent<EnenmyTwo>().TackDemage(100);//  ол-во отнимаемых очков
         }
     }
     void OnDrawGizmosSelected()// ѕроектирование свер точек атаки
