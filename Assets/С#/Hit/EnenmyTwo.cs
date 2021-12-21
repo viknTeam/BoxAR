@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnenmyTwo : MonoBehaviour
 {
@@ -27,7 +28,9 @@ public class EnenmyTwo : MonoBehaviour
         if (currentHealTwo <= 0)
         {
             TheTwo();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
+        
     }
     void TheTwo()
     {

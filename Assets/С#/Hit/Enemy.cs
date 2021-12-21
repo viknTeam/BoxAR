@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class Enemy : MonoBehaviour
         if(currentHeal <= 0)
         {
             The();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
         }
     }
     void The()
@@ -38,7 +41,6 @@ public class Enemy : MonoBehaviour
         GetComponent<MovemenTwo>().enabled = false;// Отключения скрипта при поражения
         GetComponent<HitBox2>().enabled = false;//Отключения скрипта атаки
 
-
-        
     }
+   
 }
