@@ -17,7 +17,7 @@ public class EnenmyTwo : MonoBehaviour
         currentHealTwo = maxHealTwo;// Возвращения кол-во очков здоровья в исходное положения
         
     }
-    void UpDate()
+    void Update()
     {
         textTwo.text = "Здоровье: " + currentHealTwo;
     }
@@ -28,7 +28,7 @@ public class EnenmyTwo : MonoBehaviour
         if (currentHealTwo <= 0)
         {
             TheTwo();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneLoaderBySeconds(3);
         }
         
     }
@@ -39,9 +39,11 @@ public class EnenmyTwo : MonoBehaviour
         GetComponent<Collider>().enabled = false;//Отключения колайдера
         GetComponent<Movemen>().enabled = false;//Отключения скрипта хотьбы
         GetComponent<HitBox1>().enabled = false;//Отключения скрипта ататки
-       
-      
-        
     }
-   
+    private IEnumerator SceneLoaderBySeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene("BoxMenu");
+    }
+
 }

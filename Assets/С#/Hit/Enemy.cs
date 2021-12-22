@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     {
         currentHeal = maxHeal;// Возвращения кол-во очков здоровья при начале игры
     }
-    void UpDate()
+    void Update()
     {
         text.text = "Здоровье: " + currentHeal;
     }
@@ -23,16 +23,16 @@ public class Enemy : MonoBehaviour
     public void TakeDemage(int demage)
     {
         currentHeal -= demage; 
-
+        
         animator.SetTrigger("Hurt"); // Анимация получения атаки
         if(currentHeal <= 0)
         {
             The();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            StartCoroutine(SceneLoaderBySeconds(3));
 
         }
     }
-    void The()
+    private void The()
     {
 
         animator.SetBool("Rest", true);// Анимация проигрыша
@@ -42,5 +42,10 @@ public class Enemy : MonoBehaviour
         GetComponent<HitBox2>().enabled = false;//Отключения скрипта атаки
 
     }
-   
+    private IEnumerator SceneLoaderBySeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene("BoxMenu");
+    }
+
 }
